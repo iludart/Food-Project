@@ -164,3 +164,38 @@ h3 {
     border: 1px solid #cf6d17;
     color: #fff;
 }
+
+/* --- MEALS --- */
+.section-meals {
+    padding: 0;
+}
+
+.section-meals ul {
+    width: 100%;
+    list-style: none;
+}
+
+.section-meals ul li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.section-meals .meal-photo {
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.section-meals ul li img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.section-meals ul li img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
