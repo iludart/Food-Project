@@ -31,13 +31,6 @@ section {
     padding: 1px;
 }
 
-.icon-big {
-    display: inline-block;
-    color: #e67e22;
-    font-size: 300%;
-    margin-bottom: 10px;
-}
-
 .clearfix {
     zoom: 1;
 }
@@ -50,6 +43,42 @@ section {
     visibility: hidden;
 }
 
+/* --- ICONS --- */
+.icon-big {
+    display: inline-block;
+    color: #e67e22;
+    font-size: 300%;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 150%;
+    
+    /*  vert align  */
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* --- LINKS --- */
+a:link,
+a:visited {
+    color: #e67e22;
+    padding-bottom: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
 /* --- HEADER --- */
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
@@ -57,6 +86,7 @@ header {
     height: 100vh;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero-box {
@@ -212,19 +242,23 @@ h3 {
 }
 
 /* --- HOW IT WORKS --- */
+.section-works {
+    background-color: #eee;
+}
+
 .app-phone {
-    height: 450px;
+    height: 440px;
     width: auto;
 }
 
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .steps-box:last-child {
-    margin-top: 70px;
+    margin-top: 80px;
     padding-left: 3%;
 }
 
@@ -233,7 +267,7 @@ h3 {
 }
 
 .works-step:last-of-type {
-    margin-bottom: 70px
+    margin-bottom: 80px
 }
 
 .works-step div {
@@ -250,8 +284,58 @@ h3 {
     margin-right: 10px;
 }
 
-.btn-app {
+.btn-app:link,
+.btn-app:visited {
+    border-bottom: 0;
+}
+
+.btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/* --- MEALS --- */
+.section-cities img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.cities-features {
+    margin-bottom: 10px;
+}
+
+/* --- TESTIMONIALS --- */
+.section-testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("../img/back-customers.jpg");
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    font-style: italic;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    display: block;
+    font-size: 500%;
+    position: absolute;
+    top: -55px;
+    left: -15px;
+}
+
+cite {
+    display: block;
+    margin-top: 20px
+}
+
+cite img {
+    height: 50px;
+    margin-right: 10px;
+    font-size: 90%;
+    border-radius: 50%;
+    vertical-align: middle;
 }
