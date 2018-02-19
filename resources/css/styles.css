@@ -38,6 +38,17 @@ section {
     margin-bottom: 10px;
 }
 
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+}
 
 /* --- HEADER --- */
 header {
@@ -198,4 +209,49 @@ h3 {
 .section-meals ul li img:hover {
     opacity: 1;
     transform: scale(1.03);
+}
+
+/* --- HOW IT WORKS --- */
+.app-phone {
+    height: 450px;
+    width: auto;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 40px;
+}
+
+.steps-box:last-child {
+    margin-top: 70px;
+    padding-left: 3%;
+}
+
+.works-step {
+    margin-bottom: 40px
+}
+
+.works-step:last-of-type {
+    margin-bottom: 70px
+}
+
+.works-step div {
+    font-size: 150%;
+    width: 55px;
+    height: 55px;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    margin-right: 10px;
+}
+
+.btn-app {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
