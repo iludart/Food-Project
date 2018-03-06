@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 html {
     background-color: #fff;
     color: #555;
@@ -181,7 +185,8 @@ h3 {
 
 /* --- BUTTONS --- */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     margin-right: 10px;
     display: inline-block;
     background-color: #e67e22;
@@ -199,11 +204,14 @@ h3 {
     color: #e67e22;
 }
 
-.btn:hover {
+.btn:hover,
+input[type=submit]:hover {
     display: inline-block;
     background-color: #cf6d17;
     border: 1px solid #cf6d17;
     color: #fff;
+    outline: none;
+    cursor: pointer;
 }
 
 /* --- MEALS --- */
@@ -393,4 +401,28 @@ cite img {
 .plan-box div:last-child {
     text-align: center;
     border: 0;
+}
+
+/* --- CONTACT FORM --- */
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    line-height: 38px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    border-radius: 3px;
+    padding: 7px;
+    border: 1px solid #ccc;
+}
+
+input[type=checkbox] {
+    margin: 15px 10px 15px 0;
 }
