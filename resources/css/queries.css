@@ -1,0 +1,105 @@
+@media screen and (max-width: 1200px) {
+    .hero-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .long-copy { 
+        width: 100%;
+        margin-left: 0;
+     }
+
+    .row {
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .html { font-size: 16px; }
+
+    .plan-box { 
+        width: 100%;
+        margin-left: 0%;
+        font-size: 80%;
+    }
+
+    .cities-features {
+        font-size: 80%;
+    }
+
+    .plan-box div:nth-child(2) {
+        padding: 5% 3%;
+    }
+
+    footer { 
+        padding: 30px 10px; 
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .steps-box:first-child {
+        text-align: center;
+    }
+
+    .steps-box:last-child {
+        margin-top: 40px;
+    }
+
+    .works-step {
+        margin-bottom: 20px;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    .testimonial {
+        margin-bottom: 50px;
+    }
+
+    .testimonial:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    .app-phone {
+        height: 300px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .plan-box {
+        margin-bottom: 10px;
+    }
+
+    .footer-nav {
+        float: none;
+        font-size: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        float: none;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 5px auto;
+    }
+}
