@@ -12,13 +12,14 @@
     <body>
         <header>
             <nav>
-                <div class="row">
-                    <img src="resources/img/logo-white.png"/>
-                    <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our cities</a></li>
-                        <li><a href="#">Sign up</a></li>
+                <div class="row main-nav">
+                    <img src="resources/img/logo-white.png" class="logo-white"/>
+                    <a href="#" class="home-link"><img src="resources/img/logo.png" class="logo-black"/></a>
+                    <ul>
+                        <li><a href="#" class="features-link">Food delivery</a></li>
+                        <li><a href="#" class="steps-link">How it works</a></li>
+                        <li><a href="#" class="cities-link">Our cities</a></li>
+                        <li><a href="#" class="contact-link">Sign up</a></li>
                     </ul>
                 </div>
             </nav>
@@ -28,7 +29,7 @@
                 <a class="btn btn-ghost" href="#">Show me more</a>
             </div>
         </header>
-        <section class="section-features">
+        <section class="section-features js--section-features">
             <div class="row">
                 <div class="long-copy">
                     <h2>Get food fast &mdash; not fast food</h2>
@@ -115,7 +116,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section-works">
+        <section class="section-works js--section-works">
             <h2>How it works - Simple as 1, 2, 3</h2>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
@@ -139,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-cities">
+        <section class="section-cities js--section-cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
@@ -304,7 +305,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-us-section">
+        <section class="contact-us-section js--section-contact">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>
@@ -390,5 +391,13 @@
                 <p>Copyright &copy; 2015 by Udemy Course.</p>
             </div>
         </footer>
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/scripts.js"></script>
+
     </body>
 </html>
